@@ -2668,14 +2668,19 @@ body {
 
   .card-img-wrap {
     height: auto;
-    min-height: 420px;
-    padding: 2rem 1rem;
+    min-height: 400px;
+    padding: 0;
+    margin: 0 -1.25rem 1.5rem -1.25rem;
+    width: calc(100% + 2.5rem);
+    background: var(--bg-card);
+    border-radius: 0;
   }
 
   .showcase-img {
-    max-height: 400px;
+    max-height: 380px;
     width: 100%;
     object-fit: contain;
+    padding: 1.5rem 1rem;
   }
 
   /* FOUNDER'S EDITION CARDS MATRIX ON MOBILE (3x3 BALANCED GRID) */
@@ -2684,8 +2689,8 @@ body {
   }
 
   .editions-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 0.6rem;
     width: 100%;
   }
@@ -2830,6 +2835,7 @@ body {
 
   /* REGISTRY TABLE ON MOBILE (SIZE LOCKED TO DESKTOP PROPORTIONS) */
   .registry-section {
+    overflow: visible;
     padding: 4rem 1.25rem;
   }
 
