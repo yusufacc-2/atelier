@@ -2667,11 +2667,15 @@ body {
   }
 
   .card-img-wrap {
-    height: 290px;
+    height: auto;
+    min-height: 420px;
+    padding: 2rem 1rem;
   }
 
   .showcase-img {
-    max-height: 270px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
   }
 
   /* FOUNDER'S EDITION CARDS MATRIX ON MOBILE */
@@ -2715,9 +2719,37 @@ body {
     margin-top: 2.25rem;
   }
 
+  .engraving-img-wrap {
+    height: auto;
+    min-height: 320px;
+    aspect-ratio: 16 / 10;
+    width: 100%;
+  }
+
+  .engraving-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .engraving-content h3 {
     font-size: 1.5rem;
     margin-bottom: 0.65rem;
+  }
+
+  .philosophy-image-wrap {
+    height: auto;
+    min-height: 360px;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+  }
+
+  .philosophy-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .engraving-content p {
