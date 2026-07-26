@@ -2447,7 +2447,7 @@ body {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* === RESPONSIVE === */
+/* === RESPONSIVE DESIGN SYSTEM (MOBILE PHONE & TABLET) === */
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -2506,17 +2506,380 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .nav-edition { display: none; }
-
-  .hero-title {
-    font-size: 4rem;
+/* === PHONE MOBILE UI OPTIMIZATIONS (<= 768px) === */
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 4rem 1.25rem;
   }
 
+  .navbar {
+    padding: 0.85rem 1.25rem;
+  }
+
+  .nav-edition {
+    display: none;
+  }
+
+  .nav-logo {
+    font-size: 1.25rem;
+    letter-spacing: 0.28em;
+  }
+
+  .nav-cta {
+    padding: 0.55rem 1.1rem;
+    font-size: 0.72rem;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* HERO ON MOBILE */
+  .hero-fullscreen {
+    padding: 7rem 1.25rem 4.5rem 1.25rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    padding: 0.5rem 1.25rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 11.5vw, 4.2rem);
+    line-height: 1.06;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: rgba(240, 240, 240, 0.9);
+    max-width: 100%;
+    margin-bottom: 2.25rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    gap: 0.9rem;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-secondary {
+    width: 100%;
+    min-height: 54px;
+    font-size: 0.84rem;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+  }
+
+  /* SHOWCASE ON MOBILE */
+  .watch-showcase {
+    padding: 4rem 1.25rem;
+  }
+
+  .showcase-label,
+  .founders-label,
+  .meaning-label,
+  .philosophy-label,
+  .production-label,
+  .values-label,
+  .future-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.25em;
+    margin-bottom: 0.85rem;
+  }
+
+  .showcase-title,
+  .founders-title,
+  .meaning-title,
+  .philosophy-title,
+  .production-title,
+  .values-title,
+  .future-title,
+  .reserve-title {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .showcase-subtitle,
+  .founders-sub,
+  .meaning-def,
+  .meaning-body,
+  .production-time,
+  .future-body,
+  .reserve-sub {
+    font-size: 0.98rem;
+    line-height: 1.68;
+    color: var(--text-secondary);
+  }
+
+  .showcase-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem;
+    margin-bottom: 2.25rem;
+    gap: 0.25rem;
+  }
+
+  .showcase-toggle .toggle-btn {
+    flex: 1;
+    padding: 0.65rem 0.35rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+    justify-content: center;
+    min-height: 44px;
+  }
+
+  .showcase-gallery {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .showcase-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .showcase-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .showcase-card p {
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  .card-img-wrap {
+    height: 290px;
+  }
+
+  .showcase-img {
+    max-height: 270px;
+  }
+
+  /* FOUNDER'S EDITION CARDS MATRIX ON MOBILE */
+  .founders {
+    padding: 4rem 1.25rem;
+  }
+
+  .editions-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .edition-card {
+    padding: 1.25rem 0.5rem;
+    border-radius: 8px;
+  }
+
+  .edition-number {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .edition-number span {
+    font-size: 1rem;
+  }
+
+  .edition-status {
+    font-size: 0.55rem;
+    padding: 0.25rem 0.4rem;
+    letter-spacing: 0.1em;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ENGRAVING MACRO FEATURE */
+  .engraving-feature-banner {
+    padding: 1.75rem 1.25rem;
+    border-radius: 12px;
+    margin-top: 2.25rem;
+  }
+
+  .engraving-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .engraving-content p {
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  /* MEANING & PHILOSOPHY */
   .meaning-word {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .meaning-word .word-text {
+    font-size: 2.5rem;
+  }
+
+  .philosophy-tagline {
+    font-size: 1.4rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .philosophy-quote {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    padding-left: 1.25rem;
+    margin: 2rem 0;
+  }
+
+  .philosophy-close {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  /* PROCESS TIMELINE MATRIX */
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .process-grid-card {
+    padding: 1.6rem 1.35rem;
+    border-radius: 10px;
+  }
+
+  .step-num {
+    font-size: 1.75rem;
+  }
+
+  .step-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  /* REGISTRY TABLE ON MOBILE */
+  .registry-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .registry-table-wrap {
+    overflow-x: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .registry-table th,
+  .registry-table td {
+    padding: 0.9rem 0.85rem;
+    font-size: 0.86rem;
+    white-space: nowrap;
+  }
+
+  .registry-count {
+    font-size: 0.9rem;
+  }
+
+  /* RESERVE FORM ON MOBILE */
+  .reserve {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .reserve-form {
+    padding: 1.85rem 1.25rem;
+    border-radius: 14px;
+    gap: 1.35rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .form-group label {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.55rem;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    font-size: 1rem; /* 16px font-size stops iOS auto-zoom */
+    padding: 0.95rem 1rem;
+    border-radius: 8px;
+    min-height: 52px;
+  }
+
+  .checkbox-text {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .reserve-form .btn-primary {
+    min-height: 56px;
+    font-size: 0.88rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* MODAL ON MOBILE */
+  .modal-card {
+    padding: 2.25rem 1.25rem 1.85rem 1.25rem;
+    width: 94%;
+    max-height: 90vh;
+    border-radius: 16px;
+  }
+
+  .modal-title {
+    font-size: 1.65rem;
+  }
+
+  .modal-actions .btn-primary,
+  .modal-actions .btn-secondary {
+    min-height: 52px;
+    font-size: 0.82rem;
+  }
+}
+
+/* === SMALL SCREEN PHONES (<= 420px) === */
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .editions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+
+  .showcase-toggle .toggle-btn {
+    font-size: 0.6rem;
+    padding: 0.55rem 0.2rem;
   }
 }
 
