@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Atelier — Crafted by hand. Built with purpose. Founder's Edition: Only 3 skeleton mechanical watches ever produced. Reserve yours." />
+  <meta name="keywords" content="atelier watch, luxury watch, skeleton watch, handmade watch, founder's edition, mechanical watch, limited edition" />
+  <meta property="og:title" content="ATELIER — Founder's Edition // 001" />
+  <meta property="og:description" content="Crafted by hand. Built with purpose. Only 3 watches will ever be produced." />
+  <meta property="og:type" content="website" />
+  <title>ATELIER — Founder's Edition // 001</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">ATELIER</div>
+      <div class="nav-center">
+        <span class="nav-edition">Founder's Edition // 001</span>
+      </div>
+      <div class="nav-right">
+        <a href="#reserve" class="nav-cta" id="nav-reserve-btn">Reserve</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (FULLSCREEN CINEMATIC VIDEO) -->
+  <section class="hero hero-fullscreen" id="hero">
+    <div class="hero-video-wrap">
+      <video
+        id="hero-bg-video"
+        class="hero-video-full"
+        src="/main.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        disablepictureinpicture
+        preload="auto"
+        aria-label="Atelier Founder's Edition skeleton mechanical watch full screen video"
+      ></video>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-noise"></div>
+    </div>
+    <div class="hero-content hero-content-center">
+      <div class="hero-text hero-text-fullscreen">
+        <h1 class="hero-title" id="hero-title">
+          <span class="hero-title-line">ATELIER</span>
+        </h1>
+        <p class="hero-tagline" id="hero-tagline">Crafted by hand. Built with purpose.</p>
+        <p class="hero-limit-bar" id="hero-limit">FOUNDER'S EDITION // 001 &mdash; ONLY 3 WATCHES WILL EVER BE PRODUCED.</p>
+        <div class="hero-cta-group">
+          <a href="#showcase" class="btn-primary" id="hero-reserve-btn">Explore Edition 001</a>
+          <a href="#reserve" class="btn-secondary" id="hero-reserve-direct">Reserve Your Piece</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" id="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- WATCH 001 SHOWCASE (FRONT & BACK) -->
+  <section class="watch-showcase" id="showcase">
+    <div class="showcase-inner">
+      <div class="showcase-header">
+        <div class="showcase-label">Exclusive Inspection</div>
+        <h2 class="showcase-title">Founder's Edition // 001</h2>
+        <p class="showcase-subtitle">Inspect the actual timepiece — hand-crafted, individually assembled and numbered.</p>
+        <div class="showcase-toggle" id="showcase-toggle">
+          <button class="toggle-btn active" data-view="side-by-side">Side-by-Side</button>
+          <button class="toggle-btn" data-view="front">Front Dial</button>
+          <button class="toggle-btn" data-view="back">Exhibition Back</button>
+        </div>
+      </div>
+
+      <div class="showcase-gallery" id="showcase-gallery">
+        <!-- Front View Card -->
+        <div class="showcase-card showcase-front" id="card-front">
+          <div class="card-badge">Front View — Skeleton Dial</div>
+          <div class="card-img-wrap">
+            <img src="/001-front.png" alt="Atelier Founder's Edition 001 Watch Front View" class="showcase-img" id="img-front" />
+            <div class="img-glow"></div>
+          </div>
+          <div class="card-details">
+            <h3>Skeleton Movement Dial</h3>
+            <p>Every gear and jewel exposed to highlight mechanical precision. Hand-assembled gold bridges, sapphire crystal glass, and custom hands.</p>
+          </div>
+        </div>
+
+        <!-- Back View Card -->
+        <div class="showcase-card showcase-back" id="card-back">
+          <div class="card-badge">Back View — Exhibition Caseback</div>
+          <div class="card-img-wrap">
+            <img src="/001-back.png" alt="Atelier Founder's Edition 001 Watch Back View" class="showcase-img" id="img-back" />
+            <div class="img-glow"></div>
+          </div>
+          <div class="card-details">
+            <h3>Engraved Exhibition Back</h3>
+            <p>Custom automatic rotor with individual number engraving <strong>1 / 9</strong>. Exhibition caseback displaying the heart of the mechanical movement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER'S EDITION & PRICING -->
+  <section class="founders" id="founders">
+    <div class="founders-inner">
+      <div class="founders-header">
+        <div class="founders-label">Founder's Edition</div>
+        <h2 class="founders-title">Nine watches. Nine owners. Nine stories.</h2>
+        <p class="founders-sub">Every owner receives a unique engraving: <strong>1 of 9</strong> through <strong>9 of 9</strong>. These numbers will never be repeated.</p>
+      </div>
+
+      <div class="editions-grid">
+        <div class="edition-card" id="edition-001">
+          <div class="edition-number">1 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-002">
+          <div class="edition-number">2 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-003">
+          <div class="edition-number">3 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-004">
+          <div class="edition-number">4 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-005">
+          <div class="edition-number">5 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-006">
+          <div class="edition-number">6 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-007">
+          <div class="edition-number">7 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-008">
+          <div class="edition-number">8 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+        <div class="edition-card" id="edition-009">
+          <div class="edition-number">9 <span>/ 9</span></div>
+          <div class="edition-status available">Available</div>
+          <div class="edition-bar"><div class="edition-bar-fill"></div></div>
+        </div>
+      </div>
+
+      <!-- ENGRAVING MACRO FEATURE CARD -->
+      <div class="engraving-feature-banner">
+        <div class="engraving-img-wrap">
+          <img src="/engraving-detail.jpg" alt="Atelier Founder's Edition 1/9 hand engraved movement bridge" class="engraving-img" />
+          <div class="engraving-overlay"></div>
+        </div>
+        <div class="engraving-content">
+          <div class="engraving-label">Hand-Engraved Authenticity</div>
+          <h3>Individually Engraved: 1 of 9</h3>
+          <p>Every Founder's Edition bridge is hand-engraved with its individual serial number (1/9 to 9/9). Once Piece 1 through 9 are created, the tooling is retired forever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER REGISTRY TABLE (TOP PROMINENCE) -->
+  <section class="registry-section" id="registry">
+    <div class="registry-inner">
+      <div class="registry-header">
+        <div class="registry-label">Public Allocations</div>
+        <h2 class="registry-title">Founder Registry Table</h2>
+        <p class="registry-sub">Live allocation ledger for the 9 Founder's Edition timepieces. Once an order is placed, the owner's handle (or Anonymous) is recorded below.</p>
+      </div>
+
+      <div class="registry-table-wrap">
+        <table class="registry-table" id="registry-table">
+          <thead>
+            <tr>
+              <th>Version / Piece</th>
+              <th>Watch Model</th>
+              <th>Founder / Buyer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="registry-table-body">
+            <tr id="row-piece-1">
+              <td><span class="piece-badge">1 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-1"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-1"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-2">
+              <td><span class="piece-badge">2 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-2"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-2"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-3">
+              <td><span class="piece-badge">3 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-3"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-3"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-4">
+              <td><span class="piece-badge">4 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-4"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-4"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-5">
+              <td><span class="piece-badge">5 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-5"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-5"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-6">
+              <td><span class="piece-badge">6 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-6"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-6"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-7">
+              <td><span class="piece-badge">7 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-7"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-7"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-8">
+              <td><span class="piece-badge">8 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-8"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-8"><span class="badge-status open">Available</span></td>
+            </tr>
+            <tr id="row-piece-9">
+              <td><span class="piece-badge">9 / 9</span></td>
+              <td class="model-cell">Atelier Founder's Edition // 001</td>
+              <td class="buyer-cell" id="buyer-piece-9"><span class="unclaimed">— Unclaimed —</span></td>
+              <td class="status-cell" id="status-piece-9"><span class="badge-status open">Available</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="registry-footer">
+        <span class="registry-count" id="registry-count-text">0 of 9 Pieces Claimed</span>
+        <button class="btn-reset-demo" id="btn-reset-demo" style="display:none;">Reset Registry Data</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEANING SECTION -->
+  <section class="meaning" id="meaning">
+    <div class="meaning-inner">
+      <div class="meaning-label">Etymology</div>
+      <h2 class="meaning-title">Why <em>"Atelier"?</em></h2>
+      <div class="meaning-word">
+        <span class="word-text">Atelier</span>
+        <span class="word-phonetic">/ at·ell·ee·ay /</span>
+        <span class="word-lang">French</span>
+      </div>
+      <p class="meaning-def">The French word for a <em>craftsman's workshop</em> — a place where skilled makers create by hand, one piece at a time.</p>
+      <div class="meaning-divider"><span></span><span class="divider-icon">✦</span><span></span></div>
+      <p class="meaning-body">Our watches are inspired by that philosophy. Not mass produced. Not rushed. Each watch is individually assembled, inspected and prepared for its owner.</p>
+    </div>
+  </section>
+
+  <!-- CRAFTSMANSHIP PHILOSOPHY SECTION (FEATURING MOVEMENT-DETAIL.JPG) -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-image-wrap">
+      <img src="/movement-detail.jpg" alt="Atelier watchmaker assembling mechanical movement by hand" class="philosophy-img" id="philosophy-img" />
+      <div class="philosophy-img-overlay"></div>
+    </div>
+    <div class="philosophy-content">
+      <div class="philosophy-label">Our Meaning</div>
+      <h2 class="philosophy-title">Most watches<br><em>hide</em> the movement.</h2>
+      <div class="philosophy-tagline">We don't.</div>
+      <div class="philosophy-pillars">
+        <div class="pillar" id="pillar-1">
+          <div class="pillar-icon">⚙</div>
+          <p>Every gear turns<br><strong>for a reason.</strong></p>
+        </div>
+        <div class="pillar" id="pillar-2">
+          <div class="pillar-icon">◆</div>
+          <p>Every jewel has<br><strong>a purpose.</strong></p>
+        </div>
+        <div class="pillar" id="pillar-3">
+          <div class="pillar-icon">◉</div>
+          <p>Every component<br><strong>works together.</strong></p>
+        </div>
+      </div>
+      <blockquote class="philosophy-quote">
+        The exposed movement is a reminder that the best things in life aren't hidden — they're built through patience, precision and purpose.
+      </blockquote>
+      <p class="philosophy-close">When you wear an Atelier watch, you aren't simply wearing a timepiece.<br><strong>You're wearing craftsmanship.</strong></p>
+    </div>
+  </section>
+
+  <!-- PRODUCTION PROCESS (COMPACT 3x3 MATRIX) -->
+  <section class="production" id="production">
+    <div class="production-inner">
+      <div class="production-header">
+        <div class="production-label">Production</div>
+        <h2 class="production-title">Every watch is built to order.</h2>
+        <p class="production-time">Estimated completion: <strong>2–3 weeks</strong></p>
+      </div>
+      
+      <div class="process-grid" id="process-timeline">
+        <div class="process-grid-card" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-name">Components Prepared</div>
+          <div class="step-desc">Each part sourced, cleaned and verified before assembly begins.</div>
+        </div>
+        <div class="process-grid-card" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-name">Hand Assembled</div>
+          <div class="step-desc">The movement is built piece by piece with watchmaker's precision.</div>
+        </div>
+        <div class="process-grid-card" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-name">Hands & Rotor Installed</div>
+          <div class="step-desc">Dial hands fitted. Automatic rotor attached and tested.</div>
+        </div>
+        <div class="process-grid-card" id="step-4">
+          <div class="step-num">04</div>
+          <div class="step-name">Regulated</div>
+          <div class="step-desc">The movement is timed and adjusted for accuracy across positions.</div>
+        </div>
+        <div class="process-grid-card" id="step-5">
+          <div class="step-num">05</div>
+          <div class="step-name">Multi-Day Tested</div>
+          <div class="step-desc">Worn and measured over multiple days to confirm real-world performance.</div>
+        </div>
+        <div class="process-grid-card" id="step-6">
+          <div class="step-num">06</div>
+          <div class="step-name">Quality Inspected</div>
+          <div class="step-desc">A final inspection ensures every detail meets the Atelier standard.</div>
+        </div>
+        <div class="process-grid-card" id="step-7">
+          <div class="step-num">07</div>
+          <div class="step-name">Cleaned & Numbered</div>
+          <div class="step-desc">The case is cleaned. Your unique edition number is engraved.</div>
+        </div>
+        <div class="process-grid-card" id="step-8">
+          <div class="step-num">08</div>
+          <div class="step-name">Luxury Packaged</div>
+          <div class="step-desc">Presented in premium packaging befitting a Founder's Edition piece.</div>
+        </div>
+        <div class="process-grid-card" id="step-9">
+          <div class="step-num">09</div>
+          <div class="step-name">Securely Dispatched</div>
+          <div class="step-desc">Shipped directly to you — insured, tracked and protected.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND VALUES -->
+  <section class="values" id="values">
+    <div class="values-inner">
+      <div class="values-header">
+        <div class="values-label">What We Believe</div>
+        <h2 class="values-title">Brand Values</h2>
+      </div>
+
+      <div class="values-cards-grid">
+        <div class="value-card" id="value-1">
+          <div class="value-card-icon">⚙</div>
+          <div class="value-card-body">
+            <span class="value-tagline">Craftsmanship over</span>
+            <h3 class="value-heading">Mass Production</h3>
+          </div>
+        </div>
+
+        <div class="value-card" id="value-2">
+          <div class="value-card-icon">◆</div>
+          <div class="value-card-body">
+            <span class="value-tagline">Mechanical beauty over</span>
+            <h3 class="value-heading">Unnecessary Complexity</h3>
+          </div>
+        </div>
+
+        <div class="value-card" id="value-3">
+          <div class="value-card-icon">◉</div>
+          <div class="value-card-body">
+            <span class="value-tagline">Small batches over</span>
+            <h3 class="value-heading">Unlimited Production</h3>
+          </div>
+        </div>
+
+        <div class="value-card" id="value-4">
+          <div class="value-card-icon">✦</div>
+          <div class="value-card-body">
+            <span class="value-tagline">Quality over</span>
+            <h3 class="value-heading">Quantity</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="value-statement-banner" id="value-5">
+        <span class="statement-star">✦</span>
+        <blockquote class="statement-text">Every watch tells a story.</blockquote>
+        <span class="statement-star">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE -->
+  <section class="future" id="future">
+    <div class="future-inner">
+      <div class="future-label">What's Next</div>
+      <h2 class="future-title">The Founder's Edition<br>begins the<br><em>Atelier story.</em></h2>
+      <p class="future-body">Future models will each have their own identity while remaining true to the same philosophy of craftsmanship, limited production and timeless mechanical design.</p>
+      <div class="future-divider"><span></span><span class="divider-icon">✦</span><span></span></div>
+      <p class="future-tagline">This is chapter one.</p>
+    </div>
+  </section>
+
+  <!-- RESERVE CTA WITH LUXURY WORKSHOP BACKGROUND IMAGE -->
+  <section class="reserve" id="reserve">
+    <img src="/reserve-bg.jpg" alt="Atelier watchmaker workshop desk" class="reserve-bg-img" />
+    <div class="reserve-bg-overlay"></div>
+    <div class="reserve-inner">
+      <p class="reserve-eyebrow">Only 9 will ever exist.</p>
+      <h2 class="reserve-title">Reserve Your Piece</h2>
+      <p class="reserve-sub">Placing a reservation initiates your order. Watches are allocated strictly in chronological order of purchase (1/9 first, then 2/9, up to 9/9).</p>
+
+      <form class="reserve-form" id="reserve-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reserve-name">Your Full Name</label>
+            <input type="text" id="reserve-name" name="name" placeholder="Full name (for private billing)" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label for="reserve-email">Email Address</label>
+            <input type="email" id="reserve-email" name="email" placeholder="your@email.com (for payment invoice)" autocomplete="email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reserve-username">Public Founder Handle / Username</label>
+          <input type="text" id="reserve-username" name="username" placeholder="e.g. @WatchCollector99 or Alex M." />
+          <div class="form-microcopy">
+            <span class="micro-icon">ℹ</span>
+            <span>This name will be publicly published on the Founder Registry table above to record your piece allocation.</span>
+          </div>
+        </div>
+
+        <div class="form-group form-checkbox-group">
+          <label class="checkbox-label" for="reserve-anonymous">
+            <input type="checkbox" id="reserve-anonymous" name="anonymous" />
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Keep my name hidden (Display as <strong>"Anonymous"</strong> on the public registry table)</span>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="reserve-message">Anything you'd like us to know?</label>
+          <textarea id="reserve-message" name="message" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-full" id="reserve-submit-btn">
+          <span class="btn-text">Proceed to Order Confirmation</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </form>
+
+      <div class="reserve-success" id="reserve-success" style="display:none;">
+        <div class="success-icon">✓</div>
+        <h3>Order Reservation Received!</h3>
+        <p id="success-message-text">Your order has been recorded. Check your email for payment instructions. Your allocated piece is now reserved on the Founder Registry table.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER NOTICE CONFIRMATION MODAL -->
+  <div class="modal-backdrop" id="reserve-modal" style="display:none;">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-badge">Order & Purchase Notice</div>
+      <h3 class="modal-title">Confirm Your Atelier Purchase</h3>
+      
+      <div class="modal-notice-box">
+        <div class="notice-item">
+          <div class="notice-icon">⏱</div>
+          <div class="notice-text">
+            <strong>Chronological Allocation:</strong>
+            <p>You are reserving <span id="modal-allocated-piece" class="modal-gold">Piece 1 of 9</span> of the Founder's Edition (retail price £499).</p>
+          </div>
+        </div>
+        
+        <div class="notice-item">
+          <div class="notice-icon">📦</div>
+          <div class="notice-text">
+            <strong>3-Week Doorstep Delivery:</strong>
+            <p>Every watch is built to order by hand. Component preparation, hand assembly, regulation, multi-day testing, and engraving take <strong>up to 2–3 weeks</strong> to reach your doorstep.</p>
+          </div>
+        </div>
+
+        <div class="notice-item">
+          <div class="notice-icon">💳</div>
+          <div class="notice-text">
+            <strong>Payment Required:</strong>
+            <p>Submitting this order means you are committing to purchase. Payment instructions and bank invoice will be dispatched to your email within 24 hours to finalize your reservation.</p>
+          </div>
+        </div>
+
+        <div class="notice-item">
+          <div class="notice-icon">📜</div>
+          <div class="notice-text">
+            <strong>Public Registry Listing:</strong>
+            <p>Your handle (<span id="modal-display-name" class="modal-gold">Username</span>) will be listed on the official Founder Registry Table as the owner of this timepiece.</p>
+          </div>
+        </div>
+
+        <div class="notice-item">
+          <div class="notice-icon">🛡</div>
+          <div class="notice-text">
+            <strong>No Refunds During Build Phase:</strong>
+            <p>Due to custom component ordering, hand assembly, and individual engraving, refunds are strictly not allowed until you have received the watch at your doorstep.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-primary btn-full" id="modal-confirm-btn">
+          <span class="btn-text">I Understand — Confirm & Place Order</span>
+          <span class="btn-arrow">✓</span>
+        </button>
+        <button class="btn-secondary btn-full" id="modal-cancel-btn">Back to Form</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">ATELIER</div>
+      <p class="footer-tagline">Crafted by hand. Built with purpose.</p>
+      <p class="footer-edition">Founder's Edition // 001 — Nine watches. Nine stories.</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2025 Atelier. All rights reserved. Made with patience and purpose.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
